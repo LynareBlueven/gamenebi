@@ -1,0 +1,11 @@
+<app-header titulo="Personajes" ></app-header>
+
+<ion-content>
+    <ion-card color="secondary" (click)="verDetalle(personaje)" *ngFor="let personaje of personajesRecientes">
+      <img [src]="personaje.imagen" />
+      <ion-card-header>
+        <ion-card-title>{{personaje.nombre}}</ion-card-title>
+      </ion-card-header>
+    </ion-card> 
+</ion-content>
+  

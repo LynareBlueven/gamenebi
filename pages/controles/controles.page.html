@@ -1,0 +1,18 @@
+<app-header titulo="Controles" ></app-header>
+
+<ion-content>
+<ion-card *ngFor="let Controles of controlesRecientes">
+    <img [src]="Controles.imagen" />
+    <ion-card-header>
+      <ion-card-title>{{Controles.nombre}}</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{Controles.descripcion}}
+    </ion-card-content>
+</ion-card>
+</ion-content>
+
+
+

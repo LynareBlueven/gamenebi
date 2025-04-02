@@ -1,0 +1,44 @@
+
+<div class="titulo">
+</div>
+                                                            
+<div class="imagen-container">
+  <img class="imagen" [src]="personaje.imagen">
+</div>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title class="titulo-grande">{{personaje.nombre}}</ion-card-title>
+    <ion-card-content class="contenido-grande">{{personaje.descripcion}}</ion-card-content>  
+  
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-list>
+      
+        <ion-col size="6">
+          <ion-item>
+              <img class="icono" alt="vida" src="../../../assets/img/corazon.png" />
+              <ion-label class="label-grande">Vida</ion-label>
+              <ion-label class="label-grande" color="primary">{{personaje.vida}}</ion-label>
+          </ion-item>
+          <ion-item>
+              <img class="icono" alt="damage" src="../../../assets/img/damage.png" />
+              <ion-label class="label-grande">Ataque</ion-label>
+              <ion-label class="label-grande" color="primary">{{personaje.ataque}}</ion-label>
+          </ion-item>
+      </ion-col>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+<ion-footer no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="regresar()">
+        <ion-icon slot="start" name="arrow-round-back"></ion-icon>
+        <ion-label>Regresar</ion-label>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
